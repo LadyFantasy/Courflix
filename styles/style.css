@@ -1,27 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.801218);
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  width: 100vw;
+}
+.nav .nav-logo {
+  margin-left: 6rem;
+  height: 40px;
+}
+.nav .nav-links {
+  margin-left: 6rem;
+}
+.nav .nav-links .nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 3rem;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.container-image {
+  height: 100vh;
+  background-image: url("../assets/portada.png");
+  background-position: top;
+  background-size: cover;
 }
 
 .container {
+  margin-top: -2rem;
   background-color: black;
+  background: linear-gradient(0deg, #000006 98%, rgba(0, 0, 0, 0.021) 100%);
   min-height: 100vh;
-}
-.container .series-wrapper {
-  color: white;
-}
-.container .series-wrapper .series-carrousel {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-}
-.container .series-wrapper .series-carrousel::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-}
-.container .series-wrapper .series-carrousel__link {
-  margin-right: 1rem;
-  scroll-snap-align: start;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,35 +1,77 @@
-    
-* {
-    box-sizing: border-box;
-    margin: 0;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
-.container{
-    background-color: black;
-    min-height: 100vh;
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
 
 
-    .series-wrapper{
-        color: white;
-    
+    .nav {
+        position: fixed;
+        background: rgba(0, 0, 0, 0.801218);
+        display: flex;
+        align-items: center;
+        padding: .8rem 0;
+        width: 100vw;
 
-        .series-carrousel{
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            
+        .nav-logo {
+            margin-left: 6rem;
+            height: 40px;
+        }
 
-            &::-webkit-scrollbar {
-                width: 0px; 
-                background: transparent; 
-                // display: none;
-            }
+        .nav-links {
+            margin-left: 6rem;
 
 
-            &__link{
-                margin-right: 1rem;
-                scroll-snap-align: start;
+            .nav-link {
+                color: white;
+                text-decoration: none;
+                margin-left: 3rem;
+                font-weight: bold;
+                font-size: 1.3em;
+
             }
         }
+
     }
-}
+
+
+    .container-image {
+        height: 100vh;
+        background-image: url("../assets/portada.png");
+        background-position: top;
+        background-size: cover;
+    }
+
+    .container{
+        margin-top: -2rem;
+        background-color: black;
+        background: linear-gradient(0deg, rgba(0,0,6,1) 98%, rgba(0, 0, 0, 0.021) 100%);
+        min-height: 100vh;
+    }
+
+
+    // .series-wrapper {
+    //     color: white;
+
+
+    //     .series-carrousel {
+    //         display: flex;
+    //         overflow-x: auto;
+    //         scroll-snap-type: x mandatory;
+
+
+    //         &::-webkit-scrollbar {
+    //             width: 0px;
+    //             background: transparent;
+    //             // display: none;
+    //         }
+
+
+    //         &__link {
+    //             margin-right: 1rem;
+    //             scroll-snap-align: start;
+    //         }
+    //     }
+    // }
