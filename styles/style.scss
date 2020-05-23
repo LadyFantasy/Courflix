@@ -10,12 +10,12 @@
             color: transparent;
             width: 0;
         }
-        
+
     }
 
     html {
-    scroll-behavior: smooth;
-}
+        scroll-behavior: smooth;
+    }
 
 
     .nav {
@@ -130,41 +130,41 @@
                     align-items: center;
 
 
-                    .progress-bar{
+                    .progress-bar {
                         margin-top: .6rem;
                         background-color: #858585;
                         height: .4rem;
-                        width: 13.8rem;    
-                
+                        width: 13.8rem;
 
-                        &__completed{
+
+                        &__completed {
                             background-color: #C60F0E;
                             height: 100%;
 
                         }
                     }
 
-                    &:nth-child(1) .progress-bar__completed{
+                    &:nth-child(1) .progress-bar__completed {
                         width: 15%;
                     }
 
-                    &:nth-child(2) .progress-bar__completed{
+                    &:nth-child(2) .progress-bar__completed {
                         width: 90%;
                     }
 
-                    &:nth-child(3) .progress-bar__completed{
+                    &:nth-child(3) .progress-bar__completed {
                         width: 25%;
                     }
 
-                    &:nth-child(4) .progress-bar__completed{
+                    &:nth-child(4) .progress-bar__completed {
                         width: 50%;
                     }
 
-                    &:nth-child(5) .progress-bar__completed{
+                    &:nth-child(5) .progress-bar__completed {
                         width: 75%;
                     }
 
-                    &:nth-child(6) .progress-bar__completed{
+                    &:nth-child(6) .progress-bar__completed {
                         width: 8%;
                     }
 
