@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  background-color: black;
+  min-height: 100vh;
+}
+.container .series-wrapper {
+  color: white;
+}
+.container .series-wrapper .series-carrousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.container .series-wrapper .series-carrousel::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+.container .series-wrapper .series-carrousel__link {
+  margin-right: 1rem;
+  scroll-snap-align: start;
+}
+
+/*# sourceMappingURL=style.css.map */

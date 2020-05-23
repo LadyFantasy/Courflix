@@ -1,0 +1,35 @@
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    background-color: black;
+    min-height: 100vh;
+
+
+    .series-wrapper{
+        color: white;
+    
+
+        .series-carrousel{
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            
+
+            &::-webkit-scrollbar {
+                width: 0px; 
+                background: transparent; 
+                // display: none;
+            }
+
+
+            &__link{
+                margin-right: 1rem;
+                scroll-snap-align: start;
+            }
+        }
+    }
+}
