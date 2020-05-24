@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courflix</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -16,35 +17,35 @@
         <img src="./assets/LOGO.png" alt="logo" class="nav-logo">
 
         <div class="nav-links">
-            <a href="#" class="nav-link">Inicio</a>
-            <a href="#" class="nav-link">Series</a>
+            <a href="#main" class="nav-link">Inicio</a>
+            <a href="#series" class="nav-link">Series</a>
             <a href="#" class="nav-link">Películas</a>
-            <a href="#" class="nav-link">Agregados recientemente</a>
-            <a href="#" class="nav-link">Mi lista</a>
+            <a href="#agregados" class="nav-link">Agregados recientemente</a>
+            <a href="#mi-lista" class="nav-link">Mi lista</a>
         </div>
 
     </nav>
 
     <!-- MAIN -->
-    <div class="main">
+    <main class="main" id="main">
         <div class="main-titles">
             <h3 class="title-over">Original de COURFLIX</h3>
             <h1 class="title-main">BLACK SUMMER</h1>
-            <a href="#"><span class="title-box">Reproducir</span></a>
-            <a href="#"><span class="title-box">+ mi lista</span></a>
+            <a href="detalle.html"><span class="title-box">Reproducir</span></a>
+            <a href="#mi-lista"><span class="title-box">+ mi lista</span></a>
             <p class="title-serie">Ve la temporada 1</p>
-            <p class="title-sinopsis">Una ansiada luna de miel. Un asesinato terrible. Varios sospechosos. Si
-                sobreviven, serán unas vacaciones de ensueño.</p>
+            <p class="title-sinopsis">Una ansiada luna de miel. Un asesinato terrible. Varios sospechosos. Si sobreviven, serán unas vacaciones de ensueño.</p>
         </div>
-    </div>
+    </main>
 
     <div class="container">
 
         <div class="series-wrapper">
 
             <h3 class="series-wrapper__title">Series</h3>
-
-            <div class="series-carrousel">
+            
+            <div class="series-carrousel" id="series">
+                <span class="left-arrow"><i class="fa fa-arrow-left"></i></span>
                 <a href="detalle.html" class="series-carrousel__link">
                     <img src="./assets/Bitmap-4.png" alt="serie" class="series-carrousel__image">
                 </a>
@@ -63,7 +64,7 @@
                 <a href="detalle.html" class="series-carrousel__link">
                     <img src="./assets/Bitmap-2.png" alt="serie" class="series-carrousel__image">
                 </a>
-
+                <span class="right-arrow"><i class="fa fa-arrow-right"></i></span>
 
             </div>
 
@@ -72,8 +73,9 @@
         <div class="series-wrapper">
 
             <h3 class="series-wrapper__title">Seguir viendo contenido de Sole</h3>
-
-            <div class="series-carrousel">
+            
+            <div class="series-carrousel" id="mi-lista">
+                <span class="left-arrow"><i class="fa fa-arrow-left"></i></span>
                 <a href="detalle.html" class="series-carrousel__link">
                     <img src="./assets/preview-13.jpg" alt="serie" class="series-carrousel__image">
                     <div class="progress-bar">
@@ -110,6 +112,7 @@
                         <div class="progress-bar__completed"></div>
                     </div>
                 </a>
+                <span class="right-arrow"><i class="fa fa-arrow-right"></i></span>
 
 
             </div>
@@ -121,7 +124,8 @@
 
             <h3 class="series-wrapper__title">Agregados recientemente</h3>
 
-            <div class="series-carrousel">
+            <div class="series-carrousel" id="agregados">
+                <span class="left-arrow js-left-third"><i class="fa fa-arrow-left"></i></span>
                 <a href="detalle.html" class="series-carrousel__link">
                     <img src="./assets/preview-3.jpg" alt="serie" class="series-carrousel__image">
                 </a>
@@ -140,6 +144,7 @@
                 <a href="detalle.html" class="series-carrousel__link">
                     <img src="./assets/Bitmap-4.png" alt="serie" class="series-carrousel__image">
                 </a>
+                <span class="right-arrow"><i class="fa fa-arrow-right"></i></span>
 
 
             </div>
@@ -151,6 +156,8 @@
 
 
     </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
