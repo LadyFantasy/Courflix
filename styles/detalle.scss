@@ -1,0 +1,62 @@
+.main-detalle {
+    background-image: linear-gradient(273deg, rgba(0, 0, 6, 0) 43%, rgba(0, 0, 0, 1) 96%), url("/assets/breakingBad.png");
+    min-height: 100vh;
+    background-position: top;
+    background-size: cover;
+
+    &__text {
+        padding-left: 5.5rem;
+        padding-top: 5rem;
+        width: 100%;
+        max-width: 45rem;
+
+
+        &__spans{
+            font-size: 1.1em;
+            margin-top: -2rem;
+            margin-right: .8rem;
+            margin-bottom: 3.5rem;
+
+           .coincidence{
+               color:#009C04;;
+           }
+
+           .age{
+            border: 1px solid #979797;
+            border-radius: 8px;
+            padding: .3rem .6rem;
+           }
+
+           .seasons{
+               font-weight: bold;
+           }
+        }
+
+        .title-box-red{
+            background-color: #ED0A1D;
+        }
+
+        .title-sinopsis-detalle{
+            margin-top: 3rem;
+        }
+
+        .thumbs{
+            display: inline-flex;
+            height: 3.5rem;
+            align-items: center;
+            justify-content: center;
+            padding: .8rem;
+            border: 2px solid #D8D8D8;
+            border-radius: 50%;
+            margin: .5rem .5rem;
+
+
+            .fa{
+                font-size: 2.1rem;
+
+            }
+        }
+        
+
+    }
+}
