@@ -35,38 +35,39 @@
 $(".series-carrousel").slick({
     infinite: true,
     slidesToShow: 5,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     centerPadding: "1rem",
-    centerMode: true,
+    variableWidth: true,
+    // centerMode: true,
     accesibility: true,
     arrows: true,
     adaptiveHeight: true,
-    responsive: [
-        {
-          breakpoint: 1600,
-          settings: {
-            slidesToShow: 4,
-          }
-        },
-        {
-            breakpoint: 1400,
-            settings: {
-              slidesToShow: 3,
-            }
-          },
-          {
-            breakpoint: 1100,
-            settings: {
-              slidesToShow: 2,
-            }
-          },
-          {
-            breakpoint: 780,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            }
-          }
-    //    
-      ]
+    // responsive: [
+    //     {
+    //       breakpoint: 1700,
+    //       settings: {
+    //         slidesToShow: 4,
+    //       }
+    //     },
+    //     {
+    //         breakpoint: 1400,
+    //         settings: {
+    //           slidesToShow: 3,
+    //         }
+    //       },
+    //       {
+    //         breakpoint: 1000,
+    //         settings: {
+    //           slidesToShow: 2,
+    //         }
+    //       },
+    //       {
+    //         breakpoint: 780,
+    //         settings: {
+    //           slidesToShow: 1,
+    //           slidesToScroll: 1,
+    //         }
+    //       }
+    // //    
+    //   ]
   });

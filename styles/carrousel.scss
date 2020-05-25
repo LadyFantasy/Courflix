@@ -14,7 +14,7 @@
         position: relative;
 
         .slick-prev, .slick-next, .slick-arrow{
-            color: rgb(124, 124, 124);
+            // color: rgb(190, 190, 190);
             z-index: 999;        
         }
 
@@ -47,7 +47,9 @@
         
         // }
 
+
     
+
         &__link {
             margin: 0 .5rem;
             display: flex;
@@ -67,31 +69,55 @@
                     background-color: #C60F0E;
                     height: 100%;
                 }
+
+                .completed-one{
+                    width: 15%;
+                }
+
+                .completed-two{
+                    width: 78%;
+                }
+
+                .completed-three{
+                    width: 30%;
+                }
+
+                .completed-four{
+                    width: 20%;
+                }
+
+                .completed-five{
+                    width: 90%;
+                }
+
+                .completed-six{
+                    width: 20%;
+                }
             }
 
-            &:nth-child(1) .progress-bar__completed {
-                width: 15%;
-            }
+            // &:nth-child(1) .progress-bar__completed {
+            //     width: 15%;
+            // }
 
-            &:nth-child(2) .progress-bar__completed {
-                width: 90%;
-            }
+            // &:nth-child(2) .progress-bar__completed {
+            //     width: 90%;
+            // }
 
-            &:nth-child(3) .progress-bar__completed {
-                width: 25%;
-            }
+            // &:nth-child(3) .progress-bar__completed {
+            //     width: 25%;
+            // }
 
-            &:nth-child(4) .progress-bar__completed {
-                width: 50%;
-            }
+            // &:nth-child(4) .progress-bar__completed {
+            //     width: 50%;
+            // }
 
-            &:nth-child(5) .progress-bar__completed {
-                width: 75%;
-            }
+            // &:nth-child(5) .progress-bar__completed {
+            //     width: 75%;
+            // }
 
-            &:nth-child(6) .progress-bar__completed {
-                width: 18%;
-            }
+            // &:nth-child(6) .progress-bar__completed {
+            //     width: 18%;
+            // }
 
         }
 
