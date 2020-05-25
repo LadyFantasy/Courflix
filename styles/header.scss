@@ -1,4 +1,4 @@
-.nav {
+.header {
     position: fixed;
     margin-top: 0;
     background: rgba(0, 0, 0, 0.801218);
@@ -7,14 +7,24 @@
     padding: .8rem 0;
     width: 100vw;
     z-index: 1000;
+    // white-space: nowrap;
 
-    .nav-logo {
+    .header-logo {
         margin-left: 6rem;
         height: 40px;
+
+        @media screen and (max-width:1200px) {
+            margin-left: 2rem;
+        }
     }
 
     .nav-links {
         margin-left: 6rem;
+
+        @media screen and (max-width:1200px) {
+            margin-left: 2rem;
+        }
+        
 
 
         .nav-link {
@@ -24,6 +34,9 @@
             font-weight: bold;
             font-size: 1.3em;
 
+            @media screen and (max-width:1200px) {
+                margin-left: 1rem;
+            }
         }
     }
 

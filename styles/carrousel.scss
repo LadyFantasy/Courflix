@@ -57,28 +57,28 @@
                 }
             }
 
-            &:nth-child(1) .progress-bar__completed {
+            &:nth-child(2) .progress-bar__completed {
                 width: 15%;
             }
 
-            &:nth-child(2) .progress-bar__completed {
+            &:nth-child(3) .progress-bar__completed {
                 width: 90%;
             }
 
-            &:nth-child(3) .progress-bar__completed {
+            &:nth-child(4) .progress-bar__completed {
                 width: 25%;
             }
 
-            &:nth-child(4) .progress-bar__completed {
+            &:nth-child(5) .progress-bar__completed {
                 width: 50%;
             }
 
-            &:nth-child(5) .progress-bar__completed {
+            &:nth-child(6) .progress-bar__completed {
                 width: 75%;
             }
 
-            &:nth-child(6) .progress-bar__completed {
-                width: 8%;
+            &:nth-child(7) .progress-bar__completed {
+                width: 18%;
             }
 
         }

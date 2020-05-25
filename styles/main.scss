@@ -1,7 +1,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
     @import "carrousel";
-    @import "navbar";
+    @import "header";
     @import "detalle";
 
 
@@ -11,6 +11,12 @@
         margin: 0;
         font-family: 'Open Sans', sans-serif;
         color: white;
+
+        // @media screen and (max-width:900px) {
+        //     font-size: 12px;
+        // }
+        
+        
 
         &::-webkit-scrollbar {
             display: none;
@@ -47,6 +53,7 @@
         min-height: 100vh;
         background-position: top;
         background-size: cover;
+        min-width: 100vw;
 
         .main-titles {
             padding-top: 12rem;
@@ -60,7 +67,7 @@
             }
 
             .title-main {
-                font-size: 7.5em;
+                font-size: 9vw;
                 line-height: .9em;
                 margin-bottom: 1.5rem;
             }
