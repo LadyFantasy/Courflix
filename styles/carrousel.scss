@@ -13,31 +13,43 @@
         scroll-behavior: smooth;
         position: relative;
 
-
-        .left-arrow, .right-arrow{
-           position: sticky;
-           background-color: rgba(0, 0, 0, 0.342);
-           display: flex;
-           align-items: center; 
-           cursor: pointer;   
-           
-           .fa{
-               color: rgba(255, 255, 255, 0.733);
-           }
+        .slick-prev, .slick-next, .slick-arrow{
+            color: rgb(124, 124, 124);
+            z-index: 999;        
         }
 
-        .left-arrow{
+        .slick-prev{
             left: 0;
         }
 
-        .right-arrow{
+        .slick-next{
             right: 0;
-        
         }
+
+        // .left-arrow, .right-arrow{
+        //    position: sticky;
+        //    background-color: rgba(0, 0, 0, 0.342);
+        //    display: flex;
+        //    align-items: center; 
+        //    cursor: pointer;   
+           
+        //    .fa{
+        //        color: rgba(255, 255, 255, 0.733);
+        //    }
+        // }
+
+        // .left-arrow{
+        //     left: 0;
+        // }
+
+        // .right-arrow{
+        //     right: 0;
+        
+        // }
 
     
         &__link {
-            margin-right: 1rem;
+            margin: 0 .5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -57,27 +69,27 @@
                 }
             }
 
-            &:nth-child(2) .progress-bar__completed {
+            &:nth-child(1) .progress-bar__completed {
                 width: 15%;
             }
 
-            &:nth-child(3) .progress-bar__completed {
+            &:nth-child(2) .progress-bar__completed {
                 width: 90%;
             }
 
-            &:nth-child(4) .progress-bar__completed {
+            &:nth-child(3) .progress-bar__completed {
                 width: 25%;
             }
 
-            &:nth-child(5) .progress-bar__completed {
+            &:nth-child(4) .progress-bar__completed {
                 width: 50%;
             }
 
-            &:nth-child(6) .progress-bar__completed {
+            &:nth-child(5) .progress-bar__completed {
                 width: 75%;
             }
 
-            &:nth-child(7) .progress-bar__completed {
+            &:nth-child(6) .progress-bar__completed {
                 width: 18%;
             }
 

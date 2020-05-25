@@ -12,24 +12,18 @@
   scroll-behavior: smooth;
   position: relative;
 }
-.series-wrapper .series-carrousel .left-arrow, .series-wrapper .series-carrousel .right-arrow {
-  position: sticky;
-  background-color: rgba(0, 0, 0, 0.342);
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+.series-wrapper .series-carrousel .slick-prev, .series-wrapper .series-carrousel .slick-next, .series-wrapper .series-carrousel .slick-arrow {
+  color: #7c7c7c;
+  z-index: 999;
 }
-.series-wrapper .series-carrousel .left-arrow .fa, .series-wrapper .series-carrousel .right-arrow .fa {
-  color: rgba(255, 255, 255, 0.733);
-}
-.series-wrapper .series-carrousel .left-arrow {
+.series-wrapper .series-carrousel .slick-prev {
   left: 0;
 }
-.series-wrapper .series-carrousel .right-arrow {
+.series-wrapper .series-carrousel .slick-next {
   right: 0;
 }
 .series-wrapper .series-carrousel__link {
-  margin-right: 1rem;
+  margin: 0 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,22 +39,22 @@
   background-color: #C60F0E;
   height: 100%;
 }
-.series-wrapper .series-carrousel__link:nth-child(2) .progress-bar__completed {
+.series-wrapper .series-carrousel__link:nth-child(1) .progress-bar__completed {
   width: 15%;
 }
-.series-wrapper .series-carrousel__link:nth-child(3) .progress-bar__completed {
+.series-wrapper .series-carrousel__link:nth-child(2) .progress-bar__completed {
   width: 90%;
 }
-.series-wrapper .series-carrousel__link:nth-child(4) .progress-bar__completed {
+.series-wrapper .series-carrousel__link:nth-child(3) .progress-bar__completed {
   width: 25%;
 }
-.series-wrapper .series-carrousel__link:nth-child(5) .progress-bar__completed {
+.series-wrapper .series-carrousel__link:nth-child(4) .progress-bar__completed {
   width: 50%;
 }
-.series-wrapper .series-carrousel__link:nth-child(6) .progress-bar__completed {
+.series-wrapper .series-carrousel__link:nth-child(5) .progress-bar__completed {
   width: 75%;
 }
-.series-wrapper .series-carrousel__link:nth-child(7) .progress-bar__completed {
+.series-wrapper .series-carrousel__link:nth-child(6) .progress-bar__completed {
   width: 18%;
 }
 
