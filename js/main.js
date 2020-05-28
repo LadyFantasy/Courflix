@@ -1,73 +1,40 @@
-
-// const carrousel = document.querySelectorAll(".series-carrousel")
-
-
-
+const menu = document.querySelector(".js-menu")
+const navLinks = document.querySelector(".nav-links")
+const menuActive = document.querySelector("is-active")
 
 
-// document.addEventListener("click", (e) =>{
-//     if(e.target.closest(".fa.fa-arrow-left")) {
-//         e.target.parentNode.parentNode.scrollLeft -= e.target.parentNode.parentNode.offsetWidth
-//         console.log(e.target.parentNode.parentNode)     
-//     }
-
-//     else if(e.target.closest(".left-arrow")) {
-//         e.target.parentNode.scrollLeft -= e.target.parentNode.offsetWidth
-//         console.log(e.target.parentNode)
-//     }
-// })
+menu.addEventListener("click", () => {
+  menu.classList.add("is-active", "activate")
+    navLinks.style.display = "flex"
+})
 
 
-
-// document.addEventListener("click", (e) =>{
-//     if(e.target.closest(".fa.fa-arrow-right")) {
-//         e.target.parentNode.parentNode.scrollLeft += e.target.parentNode.parentNode.offsetWidth
-//         console.log(e.target.parentNode.parentNode)
-//     }
-
-//     else if(e.target.closest(".right-arrow")) {
-//         e.target.parentNode.scrollLeft += e.target.parentNode.offsetWidt;
-//         console.log(e.target.parentNode)
-//     }
-// })
+document.addEventListener("click", (e) => {
+  if (e.target.closest(".hamburger-box")) {
+    console.log(e.target)
+    navLinks.style.display = "none"
+    menu.classList.remove("is-active")
+  }
+})
 
 
+
+$(document).ready(function(){
 $(".series-carrousel").slick({
     infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 3,
-    centerPadding: "1rem",
+    slidesToScroll: 2,
     variableWidth: true,
-    // centerMode: true,
     accesibility: true,
     arrows: true,
-    adaptiveHeight: true,
-    // responsive: [
-    //     {
-    //       breakpoint: 1700,
-    //       settings: {
-    //         slidesToShow: 4,
-    //       }
-    //     },
-    //     {
-    //         breakpoint: 1400,
-    //         settings: {
-    //           slidesToShow: 3,
-    //         }
-    //       },
-    //       {
-    //         breakpoint: 1000,
-    //         settings: {
-    //           slidesToShow: 2,
-    //         }
-    //       },
-    //       {
-    //         breakpoint: 780,
-    //         settings: {
-    //           slidesToShow: 1,
-    //           slidesToScroll: 1,
-    //         }
-    //       }
-    // //    
-    //   ]
-  });
+   responsive: [
+          {
+            breakpoint: 850,
+            settings: {
+              slidesToScroll: 1,
+            }
+          }
+    //    
+      ]
+  })
+});
+

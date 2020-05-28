@@ -10,6 +10,10 @@
         width: 100%;
         max-width: 45rem;
 
+        @media screen and (max-width:850px) {
+            padding-left: 1rem;
+        }
+
 
         &__spans{
             font-size: 1.1em;
@@ -49,11 +53,29 @@
             border: 2px solid #D8D8D8;
             border-radius: 50%;
             margin: .5rem .5rem;
-
+            transition: all .2s;
 
             .fa{
                 font-size: 2.1rem;
 
+            }
+        }
+
+        .up:hover{
+            background-color: rgba(0, 156, 5, 0.205);
+            border: 2px solid rgb(3, 190, 10);
+            
+            .fa{
+                color: rgb(3, 190, 10);
+            }
+        }
+
+        .down:hover{
+            background-color: rgba(237, 10, 29, 0.205);
+            border: 2px solid #ED0A1D ;
+
+            .fa{
+                color: #ED0A1D;
             }
         }
         

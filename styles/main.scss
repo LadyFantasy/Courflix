@@ -5,6 +5,8 @@
     @import "detalle";
 
 
+    // $Breakpoint-tablet: 1200px;
+
 
     * {
         box-sizing: border-box;
@@ -15,8 +17,7 @@
         // @media screen and (max-width:900px) {
         //     font-size: 12px;
         // }
-        
-        
+       
 
         &::-webkit-scrollbar {
             display: none;
@@ -44,22 +45,25 @@
 
     .title-sinopsis {
         font-size: 1.5em;
-        width: 45rem;
+        // width: 45rem;
     }
 
 
     .main {
         background-image: url("../assets/portada.png");
-        min-height: 100vh;
+        height: 100vh;
         background-position: top;
         background-size: cover;
-        min-width: 100vw;
 
         .main-titles {
             padding-top: 12rem;
             padding-left: 4.6rem;
             width: 100%;
             max-width: 40rem;
+
+            @media screen and (max-width:850px) {
+                padding-left: 1rem;
+            }
 
             .title-over {
                 font-size: 1.7em;

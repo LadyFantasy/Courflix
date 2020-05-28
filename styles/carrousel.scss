@@ -1,28 +1,33 @@
-
 .series-wrapper {
     color: white;
     padding: 1rem 0;
     padding-left: 4.6rem;
+
+    @media screen and (max-width:850px) {
+        padding-left: 1rem;
+    }
 
 
     .series-carrousel {
         margin-top: 1rem;
         display: flex;
         overflow-x: hidden;
-        scroll-snap-type: x mandatory;
+        // scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
-        position: relative;
+        // position: relative;
 
-        .slick-prev, .slick-next, .slick-arrow{
+        .slick-prev,
+        .slick-next,
+        .slick-arrow {
             // color: rgb(190, 190, 190);
-            z-index: 999;        
+            z-index: 999;
         }
 
-        .slick-prev{
+        .slick-prev {
             left: 0;
         }
 
-        .slick-next{
+        .slick-next {
             right: 0;
         }
 
@@ -32,7 +37,7 @@
         //    display: flex;
         //    align-items: center; 
         //    cursor: pointer;   
-           
+
         //    .fa{
         //        color: rgba(255, 255, 255, 0.733);
         //    }
@@ -44,17 +49,21 @@
 
         // .right-arrow{
         //     right: 0;
-        
+
         // }
 
 
-    
+
 
         &__link {
             margin: 0 .5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            :focus {
+                outline: none;
+            }
 
 
             .progress-bar {
@@ -70,59 +79,36 @@
                     height: 100%;
                 }
 
-                .completed-one{
+                .completed-one {
                     width: 15%;
                 }
 
-                .completed-two{
+                .completed-two {
                     width: 78%;
                 }
 
-                .completed-three{
+                .completed-three {
                     width: 30%;
                 }
 
-                .completed-four{
+                .completed-four {
                     width: 20%;
                 }
 
-                .completed-five{
+                .completed-five {
                     width: 90%;
                 }
 
-                .completed-six{
+                .completed-six {
                     width: 20%;
                 }
             }
 
-            // &:nth-child(1) .progress-bar__completed {
-            //     width: 15%;
-            // }
-
-            // &:nth-child(2) .progress-bar__completed {
-            //     width: 90%;
-            // }
-
-            // &:nth-child(3) .progress-bar__completed {
-            //     width: 25%;
-            // }
-
-            // &:nth-child(4) .progress-bar__completed {
-            //     width: 50%;
-            // }
-
-            // &:nth-child(5) .progress-bar__completed {
-            //     width: 75%;
-            // }
-
-            // &:nth-child(6) .progress-bar__completed {
-            //     width: 18%;
-            // }
 
         }
 
-       
+
     }
 
-    
+
 }
