@@ -1,21 +1,29 @@
-const menu = document.querySelector(".js-menu")
+const menu = document.querySelector(".hamburger")
 const navLinks = document.querySelector(".nav-links")
 const menuActive = document.querySelector("is-active")
 
 
 menu.addEventListener("click", () => {
-  menu.classList.add("is-active", "activate")
-    navLinks.style.display = "flex"
-})
-
-
-document.addEventListener("click", (e) => {
-  if (e.target.closest(".hamburger-box")) {
-    console.log(e.target)
-    navLinks.style.display = "none"
-    menu.classList.remove("is-active")
+  if(menu.style.display = "inline-block"){
+  
+    menu.classList.toggle("is-active")
+    if (navLinks.classList.contains("open")) {
+      navLinks.classList.remove("open")}
+    
+    else{
+      navLinks.classList.add("open")
+    }
   }
-})
+    })
+
+
+// document.addEventListener("click", (e) => {
+//   if (e.target.closest(".hamburger-box")) {
+//     console.log(e.target)
+//     navLinks.style.display = "none"
+//     menu.classList.remove("is-active")
+//   }
+// })
 
 
 
