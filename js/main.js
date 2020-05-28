@@ -1,6 +1,5 @@
-const menu = document.querySelector(".hamburger")
+const menu = document.querySelector(".js-menu")
 const navLinks = document.querySelector(".nav-links")
-const menuActive = document.querySelector("is-active")
 
 
 menu.addEventListener("click", () => {
@@ -15,15 +14,6 @@ menu.addEventListener("click", () => {
     }
   }
     })
-
-
-// document.addEventListener("click", (e) => {
-//   if (e.target.closest(".hamburger-box")) {
-//     console.log(e.target)
-//     navLinks.style.display = "none"
-//     menu.classList.remove("is-active")
-//   }
-// })
 
 
 

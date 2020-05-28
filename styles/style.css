@@ -75,17 +75,15 @@
   width: 100vw;
   z-index: 1000;
 }
+@media screen and (min-width: 850px) {
+  .header .hamburger-box {
+    display: none;
+  }
+}
 .header .hamburger-box .hamburger-inner,
 .header .hamburger-box .hamburger-inner::before,
 .header .hamburger-box .hamburger-inner::after {
   background-color: white;
-}
-@media screen and (min-width: 850px) {
-  .header .hamburger-box .hamburger-inner,
-.header .hamburger-box .hamburger-inner::before,
-.header .hamburger-box .hamburger-inner::after {
-    display: none;
-  }
 }
 .header .hamburger-box:focus {
   outline: none;
@@ -149,8 +147,8 @@
 
 .main-detalle {
   background-image: linear-gradient(273deg, rgba(0, 0, 6, 0) 43%, black 96%), url("/assets/breakingBad.png");
-  min-height: 100vh;
-  background-position: top;
+  height: 100vh;
+  background-position: center;
   background-size: cover;
 }
 .main-detalle__text {

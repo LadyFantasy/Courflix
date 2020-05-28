@@ -8,14 +8,17 @@
     width: 100vw;
     z-index: 1000;
 
-    .hamburger-box .hamburger-inner,
-    .hamburger-box .hamburger-inner::before,
-    .hamburger-box .hamburger-inner::after {
-        background-color: white;
+    .hamburger-box {
 
         @media screen and (min-width:850px) {
             display: none;
         }
+    }
+
+    .hamburger-box .hamburger-inner,
+    .hamburger-box .hamburger-inner::before,
+    .hamburger-box .hamburger-inner::after {
+        background-color: white;
     }
 
     .hamburger-box:focus {
@@ -47,7 +50,7 @@
             background-color: rgba(0, 0, 0, 0.897);
             padding-left: 1.5rem;
             padding-bottom: 30rem;
-            
+
         }
 
 
