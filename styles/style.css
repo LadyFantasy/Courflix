@@ -83,7 +83,7 @@
 .header .hamburger-box .hamburger-inner,
 .header .hamburger-box .hamburger-inner::before,
 .header .hamburger-box .hamburger-inner::after {
-  background-color: white;
+  background-color: white !important;
 }
 .header .hamburger-box:focus {
   outline: none;

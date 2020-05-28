@@ -18,7 +18,7 @@
     .hamburger-box .hamburger-inner,
     .hamburger-box .hamburger-inner::before,
     .hamburger-box .hamburger-inner::after {
-        background-color: white;
+        background-color: white !important;
     }
 
     .hamburger-box:focus {
