@@ -8,12 +8,17 @@
     width: 100vw;
     z-index: 1000;
 
-    .hamburger{
+    .hamburger {
+
+        &:hover {
+            outline: none;
+        }
+
         @media screen and (min-width:850px) {
             display: none;
         }
     }
-    
+
 
     .hamburger-box .hamburger-inner,
     .hamburger-box .is-active,
