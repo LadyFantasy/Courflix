@@ -20,8 +20,9 @@ $(document).ready(function () {
   $(".series-carrousel").slick({
     infinite: true,
     slidesToScroll: 3,
+    slidesToShow:5,
     variableWidth: true,
-    accesibility: true,
+    accesibility:true,
     arrows: true,
     responsive: [{
       breakpoint: 850,
@@ -37,7 +38,7 @@ $(document).ready(function () {
 function slickCarrousel() {
   $(".series-carrousel-bb").slick({
     infinite: true,
-    speed: 500,
+    slidesToShow:5,
     slidesToScroll: 3,
     variableWidth: true,
     accesibility: true,

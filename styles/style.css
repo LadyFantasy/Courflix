@@ -14,7 +14,6 @@
   margin-top: 1rem;
   display: flex;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 .series-wrapper .series-carrousel .slick-prev,
 .series-wrapper .series-carrousel .slick-next,
