@@ -39,8 +39,8 @@
             flex-shrink: 1;
             align-items: center;
 
-            :focus,
-            :active {
+            &:focus,
+            &:active {
                 outline: none;
                 border: none;
             }

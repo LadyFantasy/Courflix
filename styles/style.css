@@ -41,10 +41,9 @@
   flex-shrink: 1;
   align-items: center;
 }
-.series-wrapper .series-carrousel__link :focus,
-.series-wrapper .series-carrousel__link :active,
-.series-wrapper .series-carrousel-bb__link :focus,
-.series-wrapper .series-carrousel-bb__link :active {
+.series-wrapper .series-carrousel__link:focus, .series-wrapper .series-carrousel__link:active,
+.series-wrapper .series-carrousel-bb__link:focus,
+.series-wrapper .series-carrousel-bb__link:active {
   outline: none;
   border: none;
 }
