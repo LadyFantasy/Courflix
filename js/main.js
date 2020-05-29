@@ -19,7 +19,7 @@ menu.addEventListener("click", () => {
 $(document).ready(function () {
   $(".series-carrousel").slick({
     infinite: true,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
     variableWidth: true,
     accesibility: true,
     arrows: true,
@@ -37,21 +37,26 @@ $(document).ready(function () {
 function slickCarrousel() {
   $(".series-carrousel-bb").slick({
     infinite: true,
-    slidesToScroll: 2,
+    speed: 500,
+    slidesToScroll: 3,
     variableWidth: true,
     accesibility: true,
     arrows: true,
     responsive: [{
       breakpoint: 600,
       settings: "unslick"
-    }, ]
+    }]
   })
 };
 
 slickCarrousel()
 
+$(document).ready(function () {
 $(window).resize(function () {
   if ($(window).width() > 600) {
     slickCarrousel();
   }
-});
+})
+})
+
+
