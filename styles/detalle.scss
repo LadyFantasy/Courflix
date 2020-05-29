@@ -1,7 +1,7 @@
 .main-detalle {
-    background-image: 
-    linear-gradient(180deg, rgba(0,0,6,0) 77%, rgba(0,0,0,1) 98%),linear-gradient(273deg, rgba(0, 0, 6, 0) 38%, rgba(0, 0, 0, 1) 96%),
-    url("/assets/breakingBad.png");
+    background-image:
+        linear-gradient(180deg, rgba(0, 0, 6, 0) 77%, rgba(0, 0, 0, 1) 98%), linear-gradient(273deg, rgba(0, 0, 6, 0) 38%, rgba(0, 0, 0, 1) 96%),
+        url("/assets/breakingBad.png");
     width: 100%;
     height: auto;
     background-position: top;
@@ -13,13 +13,10 @@
     }
 
     @media screen and (max-width:700px) {
-        height: 50vh;
+        height: 35vh;
         padding-top: 6rem;
     }
 
-    @media screen and (max-width:500px) {
-        height: 35vh;
-    }
 
     &__text {
         padding-left: 5.5rem;
@@ -35,21 +32,23 @@
             padding-top: 2rem;
         }
 
-        &__mobile{
+        &__mobile {
             padding-bottom: 1rem;
+            font-size: 2.5em;
+
             @media screen and (min-width:700px) {
                 display: none;
-                
+
             }
         }
 
-        &__logo{
+        &__logo {
             @media screen and (max-width:700px) {
                 display: none;
             }
         }
 
-        &__spans{
+        &__spans {
             font-size: 1.1em;
             margin-top: -3rem;
             margin-right: .8rem;
@@ -58,36 +57,41 @@
             @media screen and (max-width:700px) {
                 margin-top: 0;
             }
-           .coincidence{
-               color:#009C04;
 
-               @media screen and (max-width:700px) {
-                display: none;
+            .coincidence {
+                color: #009C04;
+
+                @media screen and (max-width:700px) {
+                    display: none;
+                }
             }
-           }
 
-           .age{
-            border: 1px solid #979797;
-            border-radius: 8px;
-            padding: .3rem .6rem;
-           }
+            .age {
+                border: 1px solid #979797;
+                border-radius: 8px;
+                padding: .3rem .6rem;
 
-           .seasons{
-               font-weight: bold;
-           }
+                @media screen and (max-width:700px) {
+                    border: none;
+                }
+            }
+
+            .seasons {
+                font-weight: bold;
+            }
         }
 
-        .title-box-red{
+        .title-box-red {
             background-color: #ED0A1D;
         }
 
-        .title-box-lista{
+        .title-box-lista {
             @media screen and (max-width:500px) {
                 display: none;
             }
         }
 
-        .title-sinopsis-detalle{
+        .title-sinopsis-detalle {
             padding: 3rem 0;
 
             @media screen and (max-width:850px) {
@@ -95,7 +99,7 @@
             }
         }
 
-        .thumbs{
+        .thumbs {
             display: inline-flex;
             height: 3.5rem;
             align-items: center;
@@ -110,34 +114,34 @@
                 display: none;
             }
 
-            .fa{
+            .fa {
                 font-size: 2.1rem;
 
             }
         }
 
-        .up:hover{
+        .up:hover {
             background-color: rgba(0, 156, 5, 0.205);
             border: 2px solid rgb(3, 190, 10);
-            
-            .fa{
+
+            .fa {
                 color: rgb(3, 190, 10);
             }
         }
 
-        .down:hover{
+        .down:hover {
             background-color: rgba(237, 10, 29, 0.205);
-            border: 2px solid #ED0A1D ;
+            border: 2px solid #ED0A1D;
 
-            .fa{
+            .fa {
                 color: #ED0A1D;
             }
         }
-        
+
 
     }
 }
 
-.container-detalle{
+.container-detalle {
     padding-top: 2rem;
 }

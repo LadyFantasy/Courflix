@@ -16,21 +16,21 @@ menu.addEventListener("click", () => {
 
 
 
-// $(document).ready(function () {
-//   $(".series-carrousel").slick({
-//     infinite: true,
-//     slidesToScroll: 2,
-//     variableWidth: true,
-//     accesibility: true,
-//     arrows: true,
-//     responsive: [{
-//       breakpoint: 850,
-//       settings: {
-//         slidesToScroll: 1,
-//       }
-//     }]
-//   })
-// });
+$(document).ready(function () {
+  $(".series-carrousel").slick({
+    infinite: true,
+    slidesToScroll: 2,
+    variableWidth: true,
+    accesibility: true,
+    arrows: true,
+    responsive: [{
+      breakpoint: 850,
+      settings: {
+        slidesToScroll: 1,
+      }
+    }]
+  })
+});
 
 
 
@@ -41,20 +41,17 @@ function slickCarrousel() {
     variableWidth: true,
     accesibility: true,
     arrows: true,
-    responsive: [
-    {
+    responsive: [{
       breakpoint: 600,
       settings: "unslick"
-    },
-   ]
+    }, ]
   })
 };
 
 slickCarrousel()
 
-$(window).resize(function(){
+$(window).resize(function () {
   if ($(window).width() > 600) {
-      slickCarrousel();   
+    slickCarrousel();
   }
 });
-

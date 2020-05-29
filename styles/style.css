@@ -16,6 +16,12 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+@media screen and (max-width: 600px) {
+  .series-wrapper .series-carrousel,
+.series-wrapper .series-carrousel-bb {
+    margin-top: -1rem;
+  }
+}
 .series-wrapper .series-carrousel .slick-prev,
 .series-wrapper .series-carrousel .slick-next,
 .series-wrapper .series-carrousel .slick-arrow,
@@ -225,13 +231,8 @@
 }
 @media screen and (max-width: 700px) {
   .main-detalle {
-    height: 50vh;
-    padding-top: 6rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  .main-detalle {
     height: 35vh;
+    padding-top: 6rem;
   }
 }
 .main-detalle__text {
@@ -252,6 +253,7 @@
 }
 .main-detalle__text__mobile {
   padding-bottom: 1rem;
+  font-size: 2.5em;
 }
 @media screen and (min-width: 700px) {
   .main-detalle__text__mobile {
@@ -286,6 +288,11 @@
   border: 1px solid #979797;
   border-radius: 8px;
   padding: 0.3rem 0.6rem;
+}
+@media screen and (max-width: 700px) {
+  .main-detalle__text__spans .age {
+    border: none;
+  }
 }
 .main-detalle__text__spans .seasons {
   font-weight: bold;
@@ -373,32 +380,97 @@ a .title-box {
 .title-sinopsis {
   font-size: 1.5em;
 }
+@media screen and (max-width: 850px) {
+  .title-sinopsis {
+    display: none;
+  }
+}
 
 .main {
   background-image: linear-gradient(180deg, rgba(0, 0, 6, 0) 77%, black 98%), url("../assets/portada.png");
-  height: 100vh;
-  background-position: top;
+  max-width: 100;
+  height: auto;
   background-size: cover;
+}
+@media screen and (max-width: 850px) {
+  .main {
+    height: 60vh;
+    background-position: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main {
+    height: 45vh;
+    padding-top: 6rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main {
+    height: 40vh;
+  }
 }
 .main .main-titles {
   padding-top: 12rem;
   padding-left: 4.6rem;
+  padding-bottom: 2rem;
   width: 100%;
   max-width: 40rem;
 }
 @media screen and (max-width: 850px) {
   .main .main-titles {
     padding-left: 1rem;
+    padding-top: 8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main .main-titles {
+    padding-top: 1rem;
   }
 }
 .main .main-titles .title-over {
   font-size: 1.7em;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 700px) {
+  .main .main-titles .title-over {
+    display: none;
+  }
+}
 .main .main-titles .title-main {
   font-size: 6.5em;
   line-height: 0.9em;
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 850px) {
+  .main .main-titles .title-main {
+    font-size: 5em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main .main-titles .title-main {
+    font-size: 2.5em;
+    padding-top: 2rem;
+  }
+}
+.main .main-titles .main__text__spans {
+  padding-bottom: 2rem;
+  font-size: 1.2em;
+}
+.main .main-titles .main__text__spans .year,
+.main .main-titles .main__text__spans .age,
+.main .main-titles .main__text__spans .seasons {
+  margin-right: 0.8rem;
+}
+.main .main-titles .main__text__spans .age {
+  padding: 0.3rem 0.6rem;
+}
+.main .main-titles .main__text__spans .seasons {
+  font-weight: bold;
+}
+@media screen and (min-width: 700px) {
+  .main .main-titles .main__text__spans {
+    display: none;
+  }
 }
 .main .main-titles a {
   text-decoration: none;
@@ -411,10 +483,21 @@ a .title-box {
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
 }
+@media screen and (max-width: 500px) {
+  .main .main-titles a .title-box {
+    padding: 1rem 1rem;
+    margin-right: 0.5rem;
+  }
+}
 .main .main-titles .title-serie {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-size: 1.5em;
+}
+@media screen and (max-width: 700px) {
+  .main .main-titles .title-serie {
+    display: none;
+  }
 }
 
 .container {
