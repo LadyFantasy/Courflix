@@ -15,12 +15,10 @@
         overflow-x: hidden;
         scroll-behavior: smooth;
 
-
         .slick-prev,
         .slick-next,
         .slick-arrow {
             z-index: 999;
-            top: 35%;
         }
 
         .slick-prev {
@@ -95,6 +93,12 @@
             margin-top: -1rem;
         }
 
+        .slick-prev,
+        .slick-next,
+        .slick-arrow {
+            top: 35%;
+        }
+
 
         .series-carrousel__link {
             @media screen and (max-width:600px) {
@@ -110,7 +114,7 @@
         }
 
         .series-carrousel__text {
-            width: 20rem;
+            width: 20em;
 
             @media screen and (max-width:600px) {
                 padding-left: 1rem;

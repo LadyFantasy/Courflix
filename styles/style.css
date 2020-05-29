@@ -23,7 +23,6 @@
 .series-wrapper .series-carrousel-bb .slick-next,
 .series-wrapper .series-carrousel-bb .slick-arrow {
   z-index: 999;
-  top: 35%;
 }
 .series-wrapper .series-carrousel .slick-prev,
 .series-wrapper .series-carrousel-bb .slick-prev {
@@ -91,6 +90,11 @@
     margin-top: -1rem;
   }
 }
+.series-wrapper .series-carrousel-bb .slick-prev,
+.series-wrapper .series-carrousel-bb .slick-next,
+.series-wrapper .series-carrousel-bb .slick-arrow {
+  top: 35%;
+}
 @media screen and (max-width: 600px) {
   .series-wrapper .series-carrousel-bb .series-carrousel__link {
     margin-top: 2rem;
@@ -103,7 +107,7 @@
   }
 }
 .series-wrapper .series-carrousel-bb .series-carrousel__text {
-  width: 20rem;
+  width: 20em;
 }
 @media screen and (max-width: 600px) {
   .series-wrapper .series-carrousel-bb .series-carrousel__text {
