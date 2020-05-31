@@ -1,21 +1,35 @@
 const menu = document.querySelector(".js-menu")
 const navLinks = document.querySelector(".nav-links")
 
-
+//Menú hamburguesa
 menu.addEventListener("click", () => {
-  if (menu.style.display = "inline-block") {
-
+  // if (menu.style.display == "inline-block") {
     menu.classList.toggle("is-active")
+    
     if (navLinks.classList.contains("open")) {
       navLinks.classList.remove("open")
     } else {
       navLinks.classList.add("open")
     }
-  }
+  // }
 })
 
 
 
+$(document).ready(function () {
+  $(window).resize(function () {
+    if ($(window).width() > 850) {
+      menu.style.display == "none"
+      navLinks.classList.remove("open")
+      menu.classList.remove("is-active")
+      console.log("caca")
+    }
+  })
+  })
+  
+
+
+//carrousel página principal
 $(document).ready(function () {
   $(".series-carrousel").slick({
     infinite: true,
@@ -34,7 +48,7 @@ $(document).ready(function () {
 });
 
 
-
+//carrousel vista BB
 function slickCarrousel() {
   $(".series-carrousel-bb").slick({
     infinite: true,
