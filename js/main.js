@@ -13,8 +13,7 @@ menu.addEventListener("click", () => {
 })
 
 
-
-$(document).ready(function () {
+$(document).ready(() => {
   $(window).resize(function () {
     if ($(window).width() > 850) {
       menu.style.display == "none"
@@ -27,7 +26,7 @@ $(document).ready(function () {
 
 
 //carrousel página principal
-$(document).ready(function () {
+$(document).ready(() =>{
   $(".series-carrousel").slick({
     infinite: true,
     slidesToScroll: 3,
