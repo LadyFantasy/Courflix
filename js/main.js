@@ -3,7 +3,6 @@ const navLinks = document.querySelector(".nav-links")
 
 //Menú hamburguesa
 menu.addEventListener("click", () => {
-  // if (menu.style.display == "inline-block") {
     menu.classList.toggle("is-active")
     
     if (navLinks.classList.contains("open")) {
@@ -11,7 +10,6 @@ menu.addEventListener("click", () => {
     } else {
       navLinks.classList.add("open")
     }
-  // }
 })
 
 
@@ -22,7 +20,6 @@ $(document).ready(function () {
       menu.style.display == "none"
       navLinks.classList.remove("open")
       menu.classList.remove("is-active")
-      console.log("caca")
     }
   })
   })
