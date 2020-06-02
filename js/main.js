@@ -17,6 +17,7 @@ document.body.addEventListener("click", (e) => {
 })
 
 
+//evita que menú hamburguesa permanezca visible al agrandar la pantalla
 $(document).ready(() => {
   $(window).resize(() => {
     if ($(window).width() > 850) {
@@ -26,6 +27,7 @@ $(document).ready(() => {
     }
   })
   })
+
 
 //carrousel página principal
 $(document).ready(() => {
@@ -64,8 +66,8 @@ function slickCarrousel() {
 
 slickCarrousel()
 
-$(document).ready(function () {
-$(window).resize(function () {
+$(document).ready(() => {
+$(window).resize(() => {
   if ($(window).width() > 600) {
     slickCarrousel();
   }
