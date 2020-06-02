@@ -2,19 +2,23 @@ const menu = document.querySelector(".js-menu")
 const navLinks = document.querySelector(".nav-links")
 
 //Menú hamburguesa
-menu.addEventListener("click", () => {
+menu.addEventListener("click", (e) => {
+    e.stopPropagation()
     menu.classList.toggle("is-active")
-    
-    if (navLinks.classList.contains("open")) {
-      navLinks.classList.remove("open")
-    } else {
-      navLinks.classList.add("open")
-    }
+    navLinks.classList.toggle("open")
+})
+
+navLinks.addEventListener("click", (e) =>{
+  e.stopPropagation()
+})
+
+document.body.addEventListener("click", (e) => {
+  navLinks.classList.remove("open")
 })
 
 
 $(document).ready(() => {
-  $(window).resize(function () {
+  $(window).resize(() => {
     if ($(window).width() > 850) {
       menu.style.display == "none"
       navLinks.classList.remove("open")
@@ -22,11 +26,9 @@ $(document).ready(() => {
     }
   })
   })
-  
-
 
 //carrousel página principal
-$(document).ready(() =>{
+$(document).ready(() => {
   $(".series-carrousel").slick({
     infinite: true,
     slidesToScroll: 3,
