@@ -12,8 +12,9 @@ navLinks.addEventListener("click", (e) =>{
   e.stopPropagation()
 })
 
-document.body.addEventListener("click", (e) => {
+document.body.addEventListener("click", () => {
   navLinks.classList.remove("open")
+  menu.classList.remove("is-active")
 })
 
 
