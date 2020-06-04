@@ -56,7 +56,7 @@ function slickCarrousel() {
     slidesToShow:5,
     slidesToScroll: 3,
     variableWidth: true,
-    accesibility: true,
+  accesibility: true,
     arrows: true,
     responsive: [{
       breakpoint: 600,

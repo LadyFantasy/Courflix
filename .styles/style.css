@@ -479,13 +479,10 @@ html {
 }
 
 .hyperlink {
+  background-color: red;
+  height: 5px;
   position: relative;
   top: 85px;
-}
-
-.hyperlink_carrousel {
-  position: relative;
-  bottom: 90px;
 }
 
 a {
@@ -513,7 +510,7 @@ a .title-box {
   margin-top: -0.1rem;
   background-color: black;
   min-height: 100vh;
-  padding-bottom: 6rem;
+  padding-bottom: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

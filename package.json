@@ -1,0 +1,19 @@
+{
+  "name": "tpfinal_1eraetapa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/main.scss .styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LadyFantasy/TP_CourseIT.git"
+  },
+  "author": "Sole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LadyFantasy/TP_CourseIT/issues"
+  },
+  "homepage": "https://github.com/LadyFantasy/TP_CourseIT#readme"
+}
